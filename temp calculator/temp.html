@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Temperature converter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="temp.css">
+    <script src="temp.js"></script>
+</head>
+<body>
+    <div class="head">
+        <h2> Temperature Converter </h2>
+    </div>
+
+    <div class="converter">
+        
+        <div class="convertft">
+
+            <div class="convertft1">
+                <label for="fromUnit">Convert From -</label> 
+                <select name="" id="fromUnit">
+                    <option value="C">Celsius</option>
+                    <option value="F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
+            </div>
+
+            <div class="convertft2"></div>
+                <label for="toUnit">Convert To -</label>
+                <select name="" id="toUnit">
+                    <option value="F">Fahrenheit</option>
+                    <option value="C">Celsius</option>
+                    <option value="K">Kelvin</option>
+                </select>
+            </div>
+
+        <div class="entertemp">
+            <label for="temperature">Temperature</label>
+
+            <br>
+
+            <input type="number" name="" id="temperature" placeholder="Enter Temperature">
+        </div>
+
+        <button onclick="convert()">
+        Convert
+        </button>
+
+        <div class="resulted">
+            <label for="result">Result</label> <br>
+            <input type="text" name="" id="result" readonly>
+        </div>
+    </div>
+
+</body>
+</html>
